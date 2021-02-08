@@ -1,0 +1,8 @@
+
+command needs to start , 
+
+
+need to be able to pull futures data 
+
+need to be able to pull economic calendars from the site
+https://www.myfxbook.com/forex-economic-calendar

@@ -1,0 +1,9 @@
+version: "2"
+services:
+  moonbot:
+    container_name: moonbot 
+    image: "moonbot"
+    build:
+      context: bot
+      dockerfile: Dockerfile
+    restart: unless-stopped
