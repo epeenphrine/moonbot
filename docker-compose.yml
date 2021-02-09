@@ -7,3 +7,10 @@ services:
       context: bot
       dockerfile: Dockerfile
     restart: unless-stopped
+
+  myfxbook_script:
+    container_name: myfxbook_script
+    image: "myfxbook_script"
+    build:
+      context: bot
+      dockerfile: myfxbook_script.Dockerfile
