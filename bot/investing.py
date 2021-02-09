@@ -34,8 +34,7 @@ def make_req_and_make_df_dict_forex(url):
         }
         res = requests.get(url,headers=headers).content
         df = pd.read_html(res)[0]
-        df.drop(columns=["Open", "Unnamed: 0￼
-", 'High', 'Low', 'Time'],axis=1, inplace=True)
+        df.drop(columns=["Open", "Unnamed: 0", 'High', 'Low', 'Time'],axis=1, inplace=True)
         df.columns = CHANGE_COLUMNS_FOREX 
         df_dict =  df.to_dict('records')
         return df_dict 
