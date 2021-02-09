@@ -18,9 +18,10 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    test_chat_id = 649629310998544425
+    # test_chat_id = 649629310998544425
+    # test_chat = client.get_channel(test_chat_id)
     main_chat_id = 492405515931090966
-    test_chat = client.get_channel(test_chat_id)
+    main_chat = client.get_channel(main_chat_id)
     data = make_req()
     print('script running')
     message = ""
