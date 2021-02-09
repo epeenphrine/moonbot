@@ -8,9 +8,9 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
 
-  myfxbook_script:
-    container_name: myfxbook_script
-    image: "myfxbook_script"
+  myfxbook_script1:
+    container_name: myfxbook_script1
+    image: "myfxbook_script1"
     build:
       context: bot
       dockerfile: myfxbook_script.Dockerfile
