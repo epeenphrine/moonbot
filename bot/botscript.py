@@ -11,7 +11,7 @@ import os
 import datetime
 
 # local import
-from config import dev, prod
+from config import prod
 from myfxbook import make_req
 
 client = discord.Client()
@@ -32,7 +32,6 @@ async def on_ready():
         # count += 1
         # if count == 5:
         #     break
-    await test_chat.send(message)
+    await main_chat.send(message)
     await client.close()
-
 client.run(prod)
